@@ -1,0 +1,213 @@
+@charset "UTF-8";
+:root {
+  --main-color: rgb(255, 147, 179);
+  --sub-color: rgb(252, 225, 255);
+}
+
+body {
+  background-image: url(../img/pastel-pink.jpg);
+  padding: 100px 0 50px 0px;
+}
+
+main {
+  position: relative;
+  margin: 0px auto;
+  background-color: #fff;
+  background-image: url(../img/pattern-dot.png);
+  background-size: 10px;
+  width: 95%;
+  max-width: 1100px;
+  box-sizing: border-box;
+  padding: 50px 15px;
+  /* box-shadow: 20px 20px 0 rgba(252, 225, 255, 0.5); */
+}
+main::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  max-width: 400px;
+  height: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  background: rgba(246, 234, 255, 0.7);
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 300px;
+  padding: 10px;
+  height: 30px;
+  line-height: 30px;
+  box-shadow: 20px 20px 0 rgba(172, 195, 231, 0.2);
+  text-align: center;
+  background: var(--sub-color);
+}
+h1 span {
+  display: block;
+  transform: translateY(-10%);
+  text-shadow: 2px 2px 0 var(--main-color);
+  color: #fff;
+  letter-spacing: 0.15em;
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+figure.idpic {
+  position: relative;
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+  border: 1px solid var(--main-color);
+  box-shadow: 10px 10px 0 rgba(252, 225, 255, 0.7);
+}
+figure.idpic img {
+  display: block;
+  width: 100%;
+}
+
+/* 자기소개------------------------------------------ */
+ul.introduction {
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 1px solid var(--sub-color);
+  padding-left: 15px;
+}
+ul.introduction li {
+  padding: 7px 0;
+  border-bottom: 1px dotted var(--main-color);
+}
+ul.introduction li:last-child {
+  border-bottom: none;
+}
+ul.introduction li em,
+ul.introduction li b {
+  display: block;
+}
+ul.introduction li b {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: var(--main-color);
+}
+ul.introduction li em {
+  padding-left: 10px;
+}
+ul.introduction li em i {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+ul.introduction li em i img {
+  width: 20px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+ul.introduction li em.introduce {
+  text-align: center;
+  font-size: 0.95em;
+}
+ul.introduction li em.introduce strong {
+  display: block;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+/* 포트폴리오------------------------------------------ */
+section.work {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+section.work h2 {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background: var(--main-color);
+  text-align: center;
+  padding: 5px;
+  text-align: center;
+}
+section.work h2 span {
+  display: block;
+  color: #fff;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+section.work figure {
+  padding: 20px 10px;
+}
+section.work figure h3 {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 5px 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  color: #fff;
+  background: var(--main-color);
+  box-shadow: 10px 10px 0 rgba(252, 225, 255, 0.7);
+}
+section.work figure img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 15px 15px 0 rgba(252, 225, 255, 0.7);
+}
+section.work figure a {
+  display: block;
+  width: 60%;
+  margin: 15px auto;
+  box-sizing: border-box;
+  padding: 7px 20px;
+  text-align: center;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  background: #fff;
+  transition: all 0.3s;
+}
+section.work figure a:hover {
+  background: var(--main-color);
+  color: #fff;
+}
+section.work figure figcaption {
+  max-width: 800px;
+  margin: 0 auto;
+}
+section.work figure figcaption dl dt {
+  display: inline-block;
+  background: var(--main-color);
+  color: #fff;
+  font-size: 0.8em;
+  padding: 0px 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+section.work figure figcaption dl dd {
+  margin: 5px 0;
+}
+@media screen and (min-width: 700px) {
+  section.work figure figcaption dl {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  section.work figure figcaption dl dt {
+    width: 13%;
+    text-align: center;
+  }
+  section.work figure figcaption dl dd {
+    width: 80%;
+  }
+}/*# sourceMappingURL=portfolio.css.map */

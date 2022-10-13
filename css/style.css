@@ -1,0 +1,10 @@
+:root{
+  --theme-color:#ffbcf6;
+}
+
+body{
+  font-family:'Montserrat','Noto Sans KR', sans-serif;
+  font-size: 15px;
+  line-height: 160%;
+  color:#000;
+}
